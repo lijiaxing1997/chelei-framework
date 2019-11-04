@@ -1,4 +1,15 @@
-import os
+import pickle
 
-for modules in os.walk(os.path.split(os.path.realpath(__file__))[0] + '/temp/'):
-    print(modules)
+class A():
+
+     def __init__(self):
+         pass
+
+     def print_str(self):
+         print('666')
+
+# a = A()
+with open('a.pickle','rb') as f:
+    data = f.read()
+    a = pickle.loads(data)
+    a.print_str()

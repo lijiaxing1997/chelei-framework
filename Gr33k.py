@@ -27,9 +27,9 @@ def start_init():
     for module_type in MODULE_TYPES:
         into_modules = {}
         class_module_names = []
-        for root,dir,files in os.walk(os.path.split(os.path.realpath(__file__))[0] + '/lib/' + module_type):
+        for root,dir,files in os.walk(os.path.split(os.path.realpath(__file__))[0] + '/lib/' + module_type): #./lib/brute/
             for file in files:
-                class_module_names.append(file.replace(".py",""))
+                class_module_names.append(file.replace(".py","")) #['Brute_ftp','Brute_mysql','Brute_ssh]
             break
         with open(os.path.split(os.path.realpath(__file__))[0] + '/init_module.py','w+') as f:
             title = 'import os\nimport pickle\n'
