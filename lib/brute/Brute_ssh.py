@@ -14,7 +14,6 @@ class Brute_ssh(Base_module):
     q_passwd = queue.Queue()  # 密码列队
     host = ''
     user = ''
-    port = 22
     login = []
     Error_count = 0
     lock = threading.Lock()
@@ -140,7 +139,7 @@ class Brute_ssh(Base_module):
                 break
 
             try:
-                self.connect(self.host,self.port,self.user,password)
+                self.connect(self.host,self.variables['port'],self.user,password)
                 self.lock.acquire()  # 加锁
                 print(Fore.GREEN + '[+]' + time.strftime('%H:%M:%S', time.localtime()) + ' ssh成功 %s -- >%s : %s' % (
                     self.host, self.user, password) + Fore.RESET)
@@ -151,10 +150,8 @@ class Brute_ssh(Base_module):
                     self.q_passwd.get()
                 self.lock.release()  # 解锁
             except Exception as e:
-                self.lock.acquire()  # 加锁
                 print(Fore.RED + '[-]' + time.strftime('%H:%M:%S', time.localtime()) + ' ssh错误 %s --> %s : %s' % (
                 self.host, self.user, password) + Fore.RESET)
-                self.lock.release()  # 解锁
 
     def brute_ssh(self,ip, user_dict, pass_dict, thread_count):  # ip地址(列表)，账号文件，密码文件，线程数
         thread = []
