@@ -16,7 +16,7 @@ python3 Gr33k.py
 ```sh
 git clone https://github.com/lijiaxing1997/chelei-framework.git
 cd chelei-framework
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 ### 目录结构
 - Gr33k.py 是框架入口主文件
