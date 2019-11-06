@@ -1,5 +1,5 @@
 # chelei-framework
-一个定制自己渗透测试的python框架
+一个定制自己渗透测试的python框架(推荐在linux或mac下使用，win请自行对路径进行修改)
 
 # 使用方法：
 python3 Gr33k.py
