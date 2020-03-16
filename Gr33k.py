@@ -16,6 +16,13 @@ IS_SELECT = 0
 
 def start_init():
     print(Fore.GREEN + '[+]正在初始化程序...请稍等' + Fore.RESET)
+    if os.path.exists("temp"):
+        pass
+    else:
+        if os.system('mkdir temp') == 0:
+            pass
+        else:
+            print(Fore.RED + "[-] 初始化temp目录失败，请手动在项目根目录创建")
     for root, dirs, files in os.walk(os.path.split(os.path.realpath(__file__))[0] + '/lib'):
         for dir in dirs:
             MODULE_TYPES.append(dir)
