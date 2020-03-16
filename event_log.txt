@@ -42,3 +42,35 @@ Operations to perform:
   Apply all migrations: auth, contenttypes, sessions
 Running migrations:
   No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.

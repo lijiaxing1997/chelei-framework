@@ -133,8 +133,12 @@ def main():
         elif command == "show modules":
             show_modules()
         elif handle[0] == "use" and handle.__len__() == 2:
-            module_type = handle[1].split('/')[0]
-            module_name = handle[1].split('/')[1]
+            try:
+                module_type = handle[1].split('/')[0]
+                module_name = handle[1].split('/')[1]
+            except:
+                print(Fore.RED + '[-]命令格式错误' + Style.RESET_ALL)
+                continue
             try:
                 if module_name in MODULES[module_type].keys():
                     MODULE_NAME = str(MODULES[module_type][module_name].__class__.__name__)
