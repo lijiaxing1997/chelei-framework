@@ -4,5 +4,5 @@ PyMySQL==0.9.2
 python_nmap==0.6.1
 colorama==0.4.1
 pexpect==4.7.0
-Django==2.1.7
+Django==2.2.24
 nmap==0.0.1
